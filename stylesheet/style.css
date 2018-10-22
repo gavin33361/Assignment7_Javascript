@@ -1,0 +1,79 @@
+html {
+	background-color: lightgrey;
+	font-family: 'Roboto', sans-serif;
+}
+
+}
+
+div {
+	display: inline-block;
+}
+
+.flexbox {
+	display: flex;
+	background-color: turquoise;
+	flex-direction: row;
+	justify-content: center;
+}
+ 
+.flexbox > div { 
+	background-color: white;
+	margin: 10px;
+	padding: 20px;
+	font-size: 25px;
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+	flex-grow: 0;
+}
+
+#one {
+	background: url(../images/strange.jpg) no-repeat;
+	background-size: contain;
+}
+
+#two {
+	background: url(../images/infinity.jpg) no-repeat;
+	background-size: contain;
+}
+
+#three {
+	background: url(../images/flash.jpg) no-repeat;
+	background-size: contain;
+}
+
+#four {
+	background: url(../images/thor.jpg) no-repeat;
+	background-size: contain;
+}
+
+.transition > div {
+	width: 300px;
+	height: 300px;
+	background: url(../images/dormammu.png) no-repeat;
+	background-size: contain;
+	margin: auto;
+	transition: all 2s;
+}
+
+@keyframes change {
+	0% {background: url(../images/surgeon.png) no-repeat;
+		background-size: contain;}
+	33% {background: url(../images/training.jpg) no-repeat;
+		background-size: contain;}
+	66% {background: url(../images/sorcerer.jpg) no-repeat;
+		background-size: contain;}
+	100% {background: url(../images/surgeon.png) no-repeat;
+		background-size: contain;}
+}
+
+#animation {
+	margin-left: auto;
+	margin-right: auto;
+	width: 400px;
+	height: 400px;
+	position: relative;
+	animation-name: change;
+	animation-duration: 8s;
+	animation-iteration-count: infinite;
+}

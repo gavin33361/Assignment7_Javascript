@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 7</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body onload="document.getElementById('one').style.filter='blur(5px)';document.getElementById('two').style.filter='blur(5px)';document.getElementById('three').style.filter='blur(5px)';document.getElementById('four').style.filter='blur(5px)'">
+	<h1>Welcome to my page</h1>
+	<h2>Guess My Favorite TV Shows/Movies</h2>
+	<div class="flexbox">
+		<div id="one"></div>
+		<div id="two"></div>
+		<div id="three"></div>
+		<div id="four"></div>
+	</div>
+	<br>
+	<center>
+			<!-- blur/unblur -->
+			Check Your Answer By Unblurring the Images
+			<br>
+			<button onclick="document.getElementById('one').style.filter='blur(5px)';document.getElementById('two').style.filter='blur(5px)';document.getElementById('three').style.filter='blur(5px)';document.getElementById('four').style.filter='blur(5px)'">Blur</button> 
+			<button onclick="document.getElementById('one').style.filter='blur(0px)';document.getElementById('two').style.filter='blur(0px)';document.getElementById('three').style.filter='blur(0px)';document.getElementById('four').style.filter='blur(0px)'">Unblur</button> 
+	</center>
+	<h2>Dormammu I've Come to Bargain Meme</h2>
+	<div class="transition">
+		<div id="five"></div>
+	</div>
+	<br>
+	<center>
+			<!-- change images -->
+			Dormammu Meme
+			<br>
+			<button onclick="document.getElementById('five').style.backgroundImage='url(images/dormammu.png)'">Dormammu</button> 
+			<button onclick="document.getElementById('five').style.backgroundImage='url(images/dormammu.gif)'">I've come to bargain</button>
+	</center>
+	<h2>Dr. Strange's Journey</h2>
+	<center>
+		<!-- Play/pause button -->
+		Animation Controls 
+		<br>
+		<button onclick="document.getElementById('animation').style.animationPlayState = 'paused'">Pause</button> 
+		<button onclick="document.getElementById('animation').style.animationPlayState = 'running'">Play</button>
+	</center>
+	<br>
+	<div id="animation">
+		<div></div>
+	</div>
+	<br>
+</body>
+</html>
